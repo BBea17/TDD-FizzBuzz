@@ -27,6 +27,9 @@ public class Operaciones {
             if (num<0){
                 return "-1 numero negativo";
             }
+            if(num>1000){
+                return "numero superior a 1000 ignorado";
+            }
         }
 
         sumaFinal=String.valueOf(sum);

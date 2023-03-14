@@ -58,4 +58,13 @@ class OperacionesTest {
         //Asserts
         assertEquals("-1 numero negativo",vacio.suma("1,2,-2"));
     }
+    @Test
+    public void testMayorMil(){
+        //Arrange
+        Operaciones vacio = new Operaciones();
+        //act
+        vacio.suma("5,1002");
+        //Asserts
+        assertEquals("numero superior a 1000 ignorado", vacio.suma("5,1002"));
+    }
 }
