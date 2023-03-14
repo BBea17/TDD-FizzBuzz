@@ -39,4 +39,13 @@ class OperacionesTest {
         //Asserts
         assertEquals("4",vacio.suma("1,1,2"));
     }
+    @Test
+    public void testSeparador(){
+        //Arrange
+        Operaciones vacio = new Operaciones();
+        //act
+        vacio.suma("1,2,");
+        //Asserts
+        assertEquals("-1",vacio.suma("1,2,"));
+    }
 }

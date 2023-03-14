@@ -10,6 +10,13 @@ public class Operaciones {
             return "0";
         }
 
+        for (int i = 0; i < numero.length();i++){
+            coma = numero.substring(i);
+        }
+
+        if(coma.equals(",")) {
+            return "-1";
+        }
 
         for(int i = 0; i< N.length;i++){
             num = Integer.parseInt(N[i]);
