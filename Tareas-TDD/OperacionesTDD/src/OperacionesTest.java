@@ -21,4 +21,22 @@ class OperacionesTest {
         //Asserts
         assertEquals("1",vacio.suma("1"));
     }
+    @Test
+    public void testTres(){
+        //Arrange
+        Operaciones vacio = new Operaciones();
+        //act
+        vacio.suma("1,2");
+        //Asserts
+        assertEquals("3",vacio.suma("1,2"));
+    }
+    @Test
+    public void testCuatro(){
+        //Arrange
+        Operaciones vacio = new Operaciones();
+        //act
+        vacio.suma("1,1,2");
+        //Asserts
+        assertEquals("4",vacio.suma("1,1,2"));
+    }
 }
