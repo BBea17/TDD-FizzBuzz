@@ -2,6 +2,7 @@ public class Operaciones {
     public String suma(String numero){
         int sum, num;
         sum = 0;
+        num = 0;
         String sumaFinal;
         String coma = "";
         String[] N = numero.split(",");
@@ -14,6 +15,8 @@ public class Operaciones {
             coma = numero.substring(i);
         }
 
+
+
         if(coma.equals(",")) {
             return "-1";
         }
@@ -21,6 +24,9 @@ public class Operaciones {
         for(int i = 0; i< N.length;i++){
             num = Integer.parseInt(N[i]);
             sum=sum+num;
+            if (num<0){
+                return "-1 numero negativo";
+            }
         }
 
         sumaFinal=String.valueOf(sum);

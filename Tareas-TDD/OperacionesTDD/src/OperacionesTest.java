@@ -48,4 +48,14 @@ class OperacionesTest {
         //Asserts
         assertEquals("-1",vacio.suma("1,2,"));
     }
+
+    @Test
+    public void testNegativo(){
+        //Arrange
+        Operaciones vacio = new Operaciones();
+        //act
+        vacio.suma("1,2,-2");
+        //Asserts
+        assertEquals("-1 numero negativo",vacio.suma("1,2,-2"));
+    }
 }
