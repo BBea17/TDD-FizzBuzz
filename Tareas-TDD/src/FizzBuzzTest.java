@@ -38,5 +38,40 @@ class FizzBuzzTest {
         //Asserts
         assertEquals(expect,sol);
     }
+    @Test
+    void testCuatro(){
+        //arrange
+        FizzBuzz test4 = new FizzBuzz();
+        String sol, expect;
+        //act
+        sol = test4.FizzBuzz(4);
+        expect = "4";
+        //Asserts
+        assertEquals(expect,sol);
+    }
+
+    @Test
+    void testCinco(){
+        //arrange
+        FizzBuzz test5 = new FizzBuzz();
+        String sol, expect;
+        //act
+        sol = test5.FizzBuzz(5);
+        expect = "Buzz";
+        //Asserts
+        assertEquals(expect,sol);
+    }
+
+    @Test
+    void testSeis(){
+        //arrange
+        FizzBuzz test6 = new FizzBuzz();
+        String sol, expect;
+        //act
+        sol = test6.FizzBuzz(6);
+        expect = "Fizz";
+        //Asserts
+        assertEquals(expect,sol);
+    }
 
 }
