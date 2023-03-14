@@ -27,5 +27,16 @@ class FizzBuzzTest {
         //Asserts
         assertEquals(expect,sol);
     }
+    @Test
+    void testTres(){
+        //arrange
+        FizzBuzz test3 = new FizzBuzz();
+        String sol, expect;
+        //act
+        sol = test3.FizzBuzz(3);
+        expect = "Fizz";
+        //Asserts
+        assertEquals(expect,sol);
+    }
 
 }
